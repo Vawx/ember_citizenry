@@ -5,16 +5,16 @@
   <div class="">
     <div class="col-xs-4">
       <div class="well well-lg">
-        <div class="row">
-            <h1><h5><span class="label label-default">{{president.party}}</span></h5>{{president.name}}</h1>
-            <a href="{{president.urls.[0]}}">{{president.urls.[0]}}</a>
+        <div class="row" style="text-align:center;">
+            <h1><h5><span class="label label-default">{{polititian.party}}</span></h5>{{polititian.name}}</h1>
+            <a href="{{polititian.urls.[0]}}">{{polititian.urls.[0]}}</a>
         </div>
         <div class="">
-          <div class="row">
-            <img src="{{president.photoUrl}}" alt="" width="100%" height="100%"/>
+          <div class="row" style="text-align:center;">
+            <img src="{{polititian.photoUrl}}" alt="" width="478px;" height="595px;"/>
           </div>
           <div class="row">
-            {{#each president.channels as |social|}}
+            {{#each polititian.channels as |social|}}
               <div class="col-xs-3">
                   <h4><span class="label label-default">{{social.type}}</span></h4>
                   <h5><a href="http://www.{{social.type}}.com/{{social.id}}" target="_blank"><span class="label label-info">{{social.id}}</span></a></h5>

@@ -19,3 +19,7 @@ a:hover {
 .navbar-brand:hover {
   color: rgb(100,100,255) !important;
 }
+
+img {
+  border:5px solid rgb(50,50,50);
+}

@@ -3,8 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     zipLookup( ) {
-      var zip = this.get('zipcode');
-      this.sendAction('zipLookup', zip);
+      var params = {
+        zip: this.get('zipcode'),
+        selection: this.get('buttonGroupValue'),
+      };
+      this.sendAction('zipLookup', params);
     }
   }
 });

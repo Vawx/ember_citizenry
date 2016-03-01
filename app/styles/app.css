@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: rgb(100,100,255) !important;
+  color: rgb(25,25,25) !important;
 }
 
 .navbar-brand {
@@ -22,4 +22,8 @@ a:hover {
 
 img {
   border:5px solid rgb(50,50,50);
+}
+
+.active a {
+  background-color: rgb(42,126,199) !important;
 }

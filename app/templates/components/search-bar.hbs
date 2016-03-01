@@ -1,5 +1,14 @@
 {{yield}}
 
+<form class="navbar-form navbar-left">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    {{#bs-button-group value=buttonGroupValue type="radio"}}
+       {{#bs-button value=1}}Officials{{/bs-button}}
+       {{#bs-button value=2}}Senate/House{{/bs-button}}
+       {{#bs-button value=3}}Bills{{/bs-button}}
+    {{/bs-button-group}}
+  </div><!-- /.navbar-collapse -->
+</form>
 <form class="navbar-form navbar-right" role="search">
   <div class="form-group">
     {{zipcode-input value=zipcode id="zipcode" placeholder="Zip..."}}

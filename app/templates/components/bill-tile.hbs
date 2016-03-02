@@ -1,16 +1,18 @@
 {{yield}}
 
 <div class="col-xs-8 col-xs-offset-2">
-  <h3><span class="label label-primary">{{bill.bill_id}}</span>
-  <span class="label label-warning">{{bill.chamber}}</span></h3>
+  <h3><a href="https://www.congress.gov/bill/114th-congress/house-bill/{{bill.number}}" target="_blank"><span class="label label-primary">{{bill.bill_id}}</span></a>
+  <span class="label label-default">{{bill.chamber}}</span></h3>
   <div class="well" style="margin-top:12px;">
-    <h4><span class="label label-info">Introduced: {{bill.introduced_on}}</span></h4>
+    <div class="row">
+      <h4>Introduced: {{bill.introduced_on}}</h4>
+    </div>
     <div class="row" style="word-wrap: break-word;">
-      <h4><span class="label label-success">Short title:</span></h4>
+      <h4>Short title:</h4>
       <p>{{bill.official_title}}</p>
     </div>
     <div class="row">
-      <h4><span class="label label-danger">Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</span></h4>
+      <h4>Sponsor: {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h4>
     </div>
   </div>
 </div>

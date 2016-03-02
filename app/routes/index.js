@@ -4,6 +4,7 @@ export default Ember.Route.extend({
     actions: {
       zipLookup( params ) {
         switch(params.selection) {
+          case undefined:
           case 1:
           this.transitionTo('polititian-result', params.zip);
           break;
